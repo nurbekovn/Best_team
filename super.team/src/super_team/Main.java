@@ -1,24 +1,25 @@
 package super_team;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
+import java.util.Arrays;
+
 public class Main {
-    public static  void main(String[] args) {
-        System.out.println("Hello ...............");
-        int a = 0 ;
-        System.out.println("Hello Nurbekov");
-        System.out.println("Hello Aziza");
-        System.out.println("Table math:  ");
-        for (int i = 0; i < 10; i++) {
-            for (int j = 0; j < 2; j++) {
-                System.out.println(j*i);
-            System.out.println(j+"*"+i);
-            }
-        }
-        System.out.println("Updated");
-    }
+    public static final GsonBuilder GSON_BUILDER = new GsonBuilder();
 
-    public static void myMethod(){
-        System.out.println("My name is Zhaulanbek");
-        System.out.println("I am thr best student in JAVA - 6");
 
+    public static void main(String[] args) {
+        Lorry [] lorries = {
+                Lorry.makeLorry(1,"Volvo", "Jake", State.BASE),
+                Lorry.makeLorry(2, "Renault", "Tom", State.BASE),
+                Lorry.makeLorry(3, "DAF XT", "Kim", State.BASE)
+        };
+
+        System.out.println("#  | Bus       | Driver   | State ");
+        System.out.println("---|-----------|----------|--------");
+        Arrays.stream(lorries).filter(x ->x.getId() == 1).forEach(System.out::println);
+        Arrays.stream(lorries).filter(x -> x.getId() == 2).forEach(System.out::println);
+        Arrays.stream(lorries).filter(x -> x.getId() == 3).forEach(System.out::println);
     }
-}
+    }
