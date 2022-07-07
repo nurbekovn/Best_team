@@ -2,6 +2,7 @@ package super_team;
 
 public class Main {
     public static  void main(String[] args) {
+        System.out.println("Hello ...............");
         int a = 0 ;
         System.out.println("Hello Nurbekov");
         System.out.println("Hello Aziza");
@@ -14,8 +15,10 @@ public class Main {
         }
         System.out.println("Updated");
     }
+
     public static void myMethod(){
         System.out.println("My name is Zhaulanbek");
         System.out.println("I am thr best student in JAVA - 6");
+
     }
 }
