@@ -57,7 +57,9 @@ public class Lorry {
     public void setState(State state) {
         this.state = state;
     }
-
+    public void drivers(){
+        System.out.printf(id + "   " + nameOfDriver +"            " + nameOfLorry+"\n");
+    }
     @Override
     public String toString() {
         return id + "   " + nameOfLorry +"                  " + state;
