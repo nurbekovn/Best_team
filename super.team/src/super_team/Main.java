@@ -13,4 +13,8 @@ public class Main {
             }
         }
     }
+    public static void myMethod(){
+        System.out.println("My name is Zhaulanbek");
+        System.out.println("I am thr best student in JAVA - 6");
+    }
 }
