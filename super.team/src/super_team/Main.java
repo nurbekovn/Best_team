@@ -1,7 +1,7 @@
 package super_team;
 
 public class Main {
-    public static <String> void main(String[] args) {
+    public static  void main(String[] args) {
         int a = 0 ;
         System.out.println("Hello Nurbekov");
         System.out.println("Hello Aziza");
@@ -12,6 +12,7 @@ public class Main {
             System.out.println(j+"*"+i);
             }
         }
+        System.out.println("Updated");
     }
     public static void myMethod(){
         System.out.println("My name is Zhaulanbek");
