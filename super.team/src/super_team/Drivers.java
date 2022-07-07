@@ -41,6 +41,6 @@ public class Drivers {
 
     @Override
     public String toString() {
-        return id + "   " + nameOfDriver +"          " + nameOfLorry;
+        return id + "   " + nameOfDriver +"            " + nameOfLorry;
     }
 }
