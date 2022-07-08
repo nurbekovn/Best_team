@@ -22,8 +22,11 @@ public class Main {
         System.out.println("---|--------------|---------");
         Arrays.stream(lorries).filter(x ->x.getId() == 1).forEach(Lorry::drivers);
         Arrays.stream(lorries).filter(x ->x.getId() == 2).forEach(Lorry::drivers);
-        Arrays.stream(lorries).filter(x ->x.getId() == 3).forEach(Lorry::drivers);
-        Arrays.stream(lorries).filter(x ->x.getId() == 3).forEach(Lorry::changeDriver);
+        Arrays.stream(lorries).filter(x ->x.getId() == 3).forEach(Lorry::drivers);   //метод списка водителей
+        System.out.printf("");
+        Arrays.stream(lorries).filter(x ->x.getId() == 3).forEach(Lorry::changeDriver); // замена водителя и вывод водителя с транспортом
+        System.out.printf("");
+        Arrays.stream(lorries).filter(x ->x.getId() == 3).forEach(Lorry::startDriving);  // метод вождения имя + транспорт
 
     }
     }

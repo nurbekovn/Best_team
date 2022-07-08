@@ -63,7 +63,7 @@ public class Lorry {
     }
 
     public void startDriving(){
-
+        System.out.printf(getNameOfDriver() + " start Driving: " + getNameOfLorry());
     }
 
     public void startRepair(){
