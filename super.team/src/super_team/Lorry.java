@@ -1,5 +1,7 @@
 package super_team;
 
+import java.util.Scanner;
+
 public class Lorry {
 
     private int id;
@@ -17,14 +19,6 @@ public class Lorry {
         lorry.state= states;
         return lorry;
     }
-
-//    public Lorry(int id, String nameOfLorry, String nameOfDriver, State state) {
-//        this.id = id;
-//        this.nameOfLorry = nameOfLorry;
-//        this.nameOfDriver = nameOfDriver;
-//        this.state = state;
-//    }
-
 
     public int getId() {
         return id;
@@ -59,6 +53,21 @@ public class Lorry {
     }
     public void drivers(){
         System.out.printf(id + "   " + nameOfDriver +"            " + nameOfLorry+"\n");
+    }
+
+    public void changeDriver(){
+        Scanner sc = new Scanner(System.in);
+        System.out.printf("Замена водителя - " + id + "\n Введите имя нового водителя:");
+        setNameOfDriver(sc.nextLine());
+        System.out.printf(id + "   " + nameOfDriver +"            " + nameOfLorry+"\n");
+    }
+
+    public void startDriving(){
+
+    }
+
+    public void startRepair(){
+
     }
     @Override
     public String toString() {
